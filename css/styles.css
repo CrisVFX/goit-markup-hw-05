@@ -250,12 +250,22 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
-}
-
-.hero {
   padding: 200px 0;
   text-align: center;
+  height: 600px;
 }
+
+/* .hero another option */
+/* padding: 200px 0; */
+/* text-align: center; */
+/* background-image: liner-gradient 
+      (rgba(46, 47, 66, 0.78), rgba(46, 47, 66, 0.78)),
+    url(../images/people-office.jpg);
+  margin: 0 auto; */
+/* height: 600px; */
+/* background-size: cover; */
+/* background-position: center; */
+/* background-repeat: no-repeat; */
 
 .hero-title {
   color: var(--white, #fff);
@@ -280,21 +290,20 @@ img {
 /* Section 2 */
 
 .benefits .item {
-  flex-basis: calc(100% / 4-30px);
-  background-color: var(--cloud);
-  height: 112px;
-  width: 264px;
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 
 .benefits .icon {
+  background-color: var(--cloud);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
-  height: 64px;
-  width: 64px;
-  margin-top: 24px;
-  margin-left: 100px;
-  margin-bottom: 32px;
+  height: 120px;
+  width: 264px;
+  margin-bottom: 8px;
 }
 
 .benefits {
@@ -361,27 +370,31 @@ img {
 
 .team .social-team {
   justify-content: center;
-  flex-basis: calc(100% / 4-30px);
   display: flex;
-  align-items: center;
   gap: 24px;
-  margin-top: 8px;
-  fill: var(--cloud);
+  padding-top: 10px;
+}
+
+.social-team .link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--iris);
+  color: var(--cloud);
 }
 
 .icon-item {
   width: 40px;
   height: 40px;
-  fill: var(--cloud);
-  background-color: var(--iris);
-  border-radius: 50%;
-  display: inline-block;
-  align-content: center;
 }
 
 .team .icon {
-  margin: 12px 12px;
-  fill: var(--cloud);
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
 }
 
 /* CUSTOMER SECTION */
@@ -405,13 +418,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
   color: #8e8f99;
 }
 
 .partners .icon {
-  width: 100px;
-  height: 60px;
   fill: currentColor;
 }
 
@@ -421,14 +431,17 @@ img {
   color: #404bbf;
 }
 
-/* Footer Section */
-
-.page-footer.bg-footer {
-  background: var(--navyblue, #2e2f42);
+.social-team .link:hover,
+.social-team .link:focus {
+  background-color: green;
 }
 
+/* Footer Section */
+
 .page-footer {
-  padding: 60px 0;
+  background: var(--navyblue, #2e2f42);
+  padding: 60px 0 60px 60px;
+  margin: 0 auto;
 }
 
 .projects {
@@ -445,7 +458,9 @@ img {
 .footer-description {
   color: var(--cloud, #f4f4fd);
   font-size: 16px;
-  padding-top: 16px;
+  padding-top: 17px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .footer-heading {
@@ -458,22 +473,47 @@ img {
 }
 
 .social-icon {
-  fill: var(--cloud);
+  fill: currentColor;
   width: 24px;
   height: 24px;
-  margin-top: 8px;
-  margin-left: 8px;
+}
+
+.social-footer.list {
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.social-footer .link {
+  align-content: center;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--cloud);
+  background-color: var(--iris);
 }
 
 .footer-block {
-  gap: 16px;
+  margin-top: 12px;
+  margin-left: 123px;
 }
 
 .footer-address {
-  margin-right: 120px;
+  margin-top: 12px;
+  margin-left: 25px;
 }
 
 .footer {
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -12px;
+  margin-left: -50px;
+  align-items: baseline;
+}
+
+.social-footer .link:hover,
+.social-footer .link:focus {
+  background-color: green;
 }
