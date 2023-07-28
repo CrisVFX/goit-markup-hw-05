@@ -433,7 +433,7 @@ img {
 
 .social-team .link:hover,
 .social-team .link:focus {
-  background-color: green;
+  background-color: #31d0aa;
 }
 
 /* Footer Section */
@@ -486,7 +486,7 @@ img {
 }
 
 .social-footer .link {
-  align-content: center;
+  justify-content: center;
   display: flex;
   height: 100%;
   align-items: center;
@@ -515,7 +515,7 @@ img {
 
 .social-footer .link:hover,
 .social-footer .link:focus {
-  background-color: green;
+  background-color: #31d0aa;
 }
 
 /* Portfolio Projects box overlay */
