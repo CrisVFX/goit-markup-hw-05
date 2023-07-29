@@ -530,9 +530,10 @@ img {
 
 /* Portfolio Projects box overlay */
 
-.project-item {
+.project-overlay {
   position: relative;
   overflow: hidden;
+  
 }
 
 .overlay-text {
