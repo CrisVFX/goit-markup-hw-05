@@ -229,9 +229,7 @@ img {
   height: 4px;
   background-color: var(--ocean);
   border-radius: 2px;
-  padding-bottom: 0px;
-margin-top: 20px;
- 
+  margin-top: 20px;
 }
 
 .bg-team {
@@ -564,16 +562,19 @@ margin-top: 20px;
   transition: transform 250ms ease-in-out; 
 }
 
-.project .text {
-  top: 50%;
-  left: 50%;
+.project .overlay-text {
+padding: 40px;
 }
   
 
-.project-card:hover .overlay, 
+.project-card:hover .overlay,   
 .project-card:focus {
   transform: translateY(0);
-border: 1px solid var(--cloud, #F4F4FD);
+}
+
+ .project-card:hover,
+ .project-card:focus{
+  border: 1px solid var(--cloud, #F4F4FD);
 box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
